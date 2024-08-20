@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add this link in your <head> tag in prompt.html -->
+    <link rel="stylesheet" href="../node_modules/alertifyjs/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="../node_modules/alertifyjs/build/css/themes/default.min.css"/>
+    <title>AI Help</title>
+    <style>
+        /* Remove any background color or shadow from the alertify dialog */
+        .alertify .ajs-modal {
+            background-color: transparent;  /* Transparent background */
+            box-shadow: none;               /* No shadow */
+            border: none;                   /* No border */
+        }
+
+        /* Customize dialog for better appearance */
+        .alertify .ajs-content {
+            background-color: white;       /* White background for content */
+            border-radius: 8px;            /* Rounded corners */
+            padding: 15px;                 /* Padding inside the dialog */
+            font-family: sans-serif;       /* Font style */
+        }
+
+        .alertify .ajs-header {
+            display: none; /* Hide the header if not needed */
+        }
+
+        .alertify .ajs-footer {
+            border-top: none; /* Remove footer border */
+        }
+    </style>
+</head>
+<body>
+    <script src="../node_modules/alertifyjs/build/alertify.min.js"></script>
+    <!---<div id="folderPathDisplay"></div>
+    <input type="text" id="promptInput" placeholder="Enter your prompt here...">
+    <button id="submitBtn">Submit</button>
+    <div id="statusLabel">Waiting for input...</div>--->
+    <script src="promptScript.js" defer></script>
+</body>
+</html>
